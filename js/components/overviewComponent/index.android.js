@@ -9,16 +9,17 @@ import {
   Item,
   Label,
   Input,
-  Picker
+  Picker,
+  Icon
 } from "native-base";
-import { View } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import styles from "./styles";
 class OverviewComp extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected2: undefined
+      selected2: "key0"
     };
   }
   onValueChange2(value: string) {
@@ -39,6 +40,7 @@ class OverviewComp extends Component {
                 iosHeader="Select one"
                 selectedValue={this.state.selected2}
                 onValueChange={this.onValueChange2.bind(this)}
+                textStyle={{color:'white', marginLeft:40, fontSize:15}}
               >
                 <Item label="My Ether Wallet" value="key0" />
                 <Item label="ATM Card" value="key1" />

@@ -1,4 +1,9 @@
-const React = require('react-native');
+import React, { Component } from 'react';
+import { Dimensions} from 'react-native';
+
+const deviceHeight = Dimensions.get('window').height;
+const deviceWidth = Dimensions.get('window').width;
+
 
 const { StyleSheet } = React;
 export default {
@@ -19,10 +24,12 @@ export default {
         color : '#0f0'
     },
     pickerBGStyle : {
-        backgroundColor:'#616161'
+        backgroundColor:'#616161',
+        flexDirection:'row'
     },
     pickerColorStyle : {
-        color:'#fff'
+        color:'#fff',
+        width: deviceWidth*0.95
     },
     redSmallText : {
         fontSize : 10,
@@ -31,6 +38,10 @@ export default {
     greenSmallText : {
         fontSize : 10,
         color : '#0f0'
+    },
+    ddStyle: {
+        color:'white',
+        fontSize:20,
+        marginTop:20
     }
-
 };

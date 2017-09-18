@@ -12,8 +12,7 @@ export default {
    },
   headerColor:{
     color:'#1f1f1f',
-    alignSelf:'center',
-    marginLeft:60
+    alignSelf:'center'
   },
   hColor:{
     color:'#1f1f1f'

@@ -59,7 +59,7 @@ class Home extends Component {
               transparent
               onPress={() => DrawerNav.navigate("DrawerOpen")}
             >
-              <Icon style={styles.hColor} active name="menu" />
+              <Icon style={styles.hColor} active name="md-more" />
             </Button>
           </Right>
         </Header>
